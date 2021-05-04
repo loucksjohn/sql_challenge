@@ -6,10 +6,10 @@ To begin the data modeling portion of this assignment, after getting all my mate
 The next step was the acutal modeling of the data in quickdatabasediagrams.com in way that would allow me to get my CSV sheets into a PostgreSQL database.  It was the first time using the program, as I was doing it before we went over it in class, but it proved to be a fairly intuitive product.  Below, I've provided a couple screen grabs of the ERD I created.
 
 screen grab of ERD from quickdatabasediagrams.com showing initial table layout code:
-![alt text](https://github.com/loucksjohn/sql_challenge/blob/main/screencap_postgresSQL.png?raw=true)
+![alt text](https://github.com/loucksjohn/sql_challenge/blob/main/screen_shots/screencap_postgresSQL.png?raw=true)
 
 another screen grab of ERD from quickdatabasediagrams.com, isolating just the diagram
-![alt text](https://github.com/loucksjohn/sql_challenge/blob/main/postgresql_graph.png?raw=true)
+![alt text](https://github.com/loucksjohn/sql_challenge/blob/main/screen_shots/postgresql_graph.png?raw=true)
 
 When those were complete, I exported the schema into a .sql file that I could then import into pgAdmin.
 I have placed all six of the CSV files and the .sql file that was exported from quickdatabasediagrams.com into the "EmployeeSQL" folder of this repository.  the export file is entitled "OG_QuickDBD-export.sql".
@@ -31,12 +31,12 @@ Importing the SQL database was a bit of a problem for me.  I was trying to do it
 PLEASE NOTE THAT I HAVE REMOVED MY PGADMIN PASSWORD FROM JUPYTER NOTEBOOK AND REPLACED IT WITH "YOURPASSWORDHERE".  I watched the youtube video that was linked in the instructions "Miguel Grinberg - Oops! I Committed My Password to GitHub! - PyCon 2018", but he kind of lost me a bit. I wanted to make sure my password wasn't on Github, so I just removed it.  So if you try to run that jupyter notebook file and it doesn't work, that's the reason why.  
 
 Here is the Histogram illustrating most common salary ranges for employees:
-![alt text](https://github.com/loucksjohn/sql_challenge/blob/main/bonus_histogram.png?raw=true)
+![alt text](https://github.com/loucksjohn/sql_challenge/blob/main/screen_shots/bonus_histogram.png?raw=true)
 
 This defitely led me to believe that the dataset was fake.  Seems highly improbable that approx. 1/3 of the employees were making $40,000 and then there was such a drastic drop as the salaries went up.  I would definitely expect a majority of employees making much less than the executives, but that curve should be much smoother.
 
 And then on to the bar chart comparing average salary by title:
-![alt text](https://github.com/loucksjohn/sql_challenge/blob/main/bonus_bar.png?raw=true)
+![alt text](https://github.com/loucksjohn/sql_challenge/blob/main/screen_shots/bonus_bar.png?raw=true)
 
 this, in combination with the histogram, seems to prove it to be a fake dataset.  the average salary for seven titles seems to be evenly spread out.  so that means that in each one of those seven groups (based on title) that there is a high number of employees making $40,000.  In the United States, it is an impossibility that "Senior Staff" and "Senior Engineer" average salary would be the same as "Assistant Engineer" and "Staff".  So I can say with a high degree of certainty that it was indeed a fake dataset.
 
